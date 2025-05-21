@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# ToDo List на базе shadcn + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение для управления списком задач, реализованное с использованием React, Redux Toolkit и TypeScript.
 
-Currently, two official plugins are available:
+## Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+В рамках технического задания реализован функционал для создания, отображения, редактирования, удаления и отметки задач как выполненных. Также добавлена фильтрация задач по статусу и сохранение данных в локальное хранилище браузера.
 
-## Expanding the ESLint configuration
+## Основные возможности
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Добавление новых задач  
+- Просмотр списка задач  
+- Отметка задач как выполненных / невыполненных  
+- Удаление задач  
+- Редактирование текста задачи  
+- Фильтрация задач по статусу (выполненные / невыполненные)  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Технологии
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React + Vite  
+- Redux Toolkit для управления состоянием  
+- TypeScript для статической типизации  
+- shadcn UI (или ваш выбранный UI-фреймворк)  
+- CSS / Tailwind / Styled Components (укажите ваш способ стилизации)  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Установка и запуск
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Клонируйте репозиторий:
+
+git clone <URL вашего репозитория>
+
+text
+
+2. Перейдите в папку проекта:
+
+cd <название-папки>
+
+text
+
+3. Установите зависимости:
+
+npm install
